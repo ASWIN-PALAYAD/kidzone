@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express'; 
 import { createProductCtrl, deleteProductCtrl, getAllProducts, getProductCtrl, updateProductCtrl } from '../controllers/productCtrl.js';
 import { isLoggedIn } from '../middlewares/isLoggedIn.js';
 import upload from '../config/fileUpload.js';
