@@ -5,7 +5,7 @@ import kidssale from '../../images/girl-shopping.jpg'
 const offers = [
   {
     name: "Download the app",
-    description: "Get an exclusive $5 off code",
+    description: "Get an exclusive ₹5 off code",
     href: "#",
   },
   {

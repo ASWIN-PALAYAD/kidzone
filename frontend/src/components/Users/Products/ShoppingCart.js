@@ -111,7 +111,7 @@ let sumTotalPrice = 0;
                           
                         </div>
                         <p className="mt-1 text-sm font-medium text-gray-900">
-                        $ {product?.price} X {product?.qty} = {product?.totalPrice}
+                        ₹ {product?.price} X {product?.qty} = {product?.totalPrice}
                         </p>
                       </div>
 
@@ -176,7 +176,7 @@ let sumTotalPrice = 0;
                 <dt className="text-sm text-gray-600">Subtotal</dt>
                 <dd className="text-sm font-medium text-gray-900">
                   {/* $ {calculateTotalDiscountedPrice().toFixed(2)} */}
-                  $ {sumTotalPrice}.00
+                  ₹ {sumTotalPrice}.00
                 </dd>
               </div>
               <div className="flex items-center justify-between border-t border-gray-200 pt-4"></div>
@@ -213,7 +213,7 @@ let sumTotalPrice = 0;
                 </dt>
                 <dd className=" text-xl font-medium text-gray-900">
                   {/* $ {calculateTotalDiscountedPrice().toFixed(2)} */}
-                  $ {sumTotalPrice}
+                  ₹ {sumTotalPrice}
                 </dd>
               </div>
             </dl>
