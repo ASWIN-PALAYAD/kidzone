@@ -24,7 +24,9 @@ dbConnect()
 const app = express();
 
 //cors
-app.use(cors());
+app.use(cors({
+  origin: 'https://shopekidzone.vercel.app/',
+}));
 
 //stripe webhook
 const stripe = new Stripe(process.env.STRIPE_KEY);
