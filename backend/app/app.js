@@ -101,9 +101,10 @@ app.use(express.static('public'));
 // })
 
 //Home route
-// app.use('/',(req,res)=>{ 
-//   res.sendFile(path,join('public','index.html'))
-// })
+app.use('/',(req,res)=>{ 
+  res.sendFile(path,join('public','index.html'))
+});
+
 //routes
 app.use('/api/v1/users',userRoutes);
 app.use('/api/v1/products',productRouter);
