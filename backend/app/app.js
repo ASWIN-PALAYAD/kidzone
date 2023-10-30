@@ -104,7 +104,7 @@ app.use(express.static('public'));
 //   res.sendFile(path,join('public','index.html'))
 // })
 //routes
-app.use('api/v1/users/',userRoutes);
+app.use('api/v1/users',userRoutes);
 app.use('api/v1/products',productRouter);
 app.use('api/v1/categories',categoriesRouter);  
 app.use('api/v1/brands',brandsRouter);
