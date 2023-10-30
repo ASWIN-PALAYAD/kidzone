@@ -24,6 +24,7 @@ dbConnect()
 const app = express();
 
 //cors
+// app.use(cors())
 app.use(cors({
   origin: 'https://kidzone.vercel.app',
   methods: ["POST", "GET", "PUT", "DELETE"],

@@ -115,11 +115,11 @@ export default function Example() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden bg-gradient-to-r from-orange-400 to-yellow-300 pb-9">
           {/* Sale */}
           <section
             aria-labelledby="sale-heading"
-            className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8">
+            className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8 ">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <h2
                 id="sale-heading"
@@ -130,11 +130,11 @@ export default function Example() {
                 Most of our products are limited releases that won't come back.
                 Get your favorite items while they're in stock.
               </p>
-              <a
+              {/* <a
                 href="#"
                 className="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 py-3 px-8 font-medium text-white hover:bg-gray-800 sm:w-auto">
                 Get access to our one-time sale
-              </a>
+              </a> */}
             </div>
           </section>
         </div>
