@@ -25,9 +25,9 @@ const app = express();
 
 //cors
 app.use(cors({
-  origin: ['https://shopekidzone.vercel.app/'],
-  methods: ["POST","GET","PUT","DELETE"],
-  credentials:true
+  origin: 'https://shopekidzone.vercel.app',
+  methods: ["POST", "GET", "PUT", "DELETE"],
+  credentials: true
 }));
 
 //stripe webhook
