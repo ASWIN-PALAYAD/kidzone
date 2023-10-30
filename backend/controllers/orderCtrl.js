@@ -90,8 +90,8 @@ export const createOrderCtrl = asyncHandler(async(req,res)=> {
             orderId :JSON.stringify( order?._id)
         },
         mode:'payment',
-        success_url:"https://shopekidzone.netlify.app/success",
-        cancel_url:"https://shopekidzone.netlify.app/cancel"
+        success_url:"https://kidzone.vercel.app/success",
+        cancel_url:"https://kidzone.vercel.app/cancel"
     }); 
     res.send({url:session.url});   
 
