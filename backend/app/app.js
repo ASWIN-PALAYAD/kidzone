@@ -25,7 +25,7 @@ const app = express();
 
 //cors
 app.use(cors({
-  origin: 'https://shopekidzone.vercel.app',
+  origin: 'https://kidzone.vercel.app/',
   methods: ["POST", "GET", "PUT", "DELETE"],
   credentials: true
 }));
