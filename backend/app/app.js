@@ -16,6 +16,11 @@ import orderRouter from "../routes/orderRouter.js";
 import Order from "../models/Order.js";
 import couponRouter from "../routes/couponRouter.js";
 
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// Get the directory of the current module
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 
 
@@ -101,10 +106,10 @@ app.use(express.static('public'));
 // })
 
 //Home route
-// app.use('/',(req,res)=>{ 
-//   // res.sendFile(path,join('public','index.html'))
-//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
-// });
+app.use('/',(req,res)=>{ 
+  // res.sendFile(path,join('public','index.html'))
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 //routes
 app.use('/api/v1/users',userRoutes);
