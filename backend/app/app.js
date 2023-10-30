@@ -102,7 +102,8 @@ app.use(express.static('public'));
 
 //Home route
 app.use('/',(req,res)=>{ 
-  res.sendFile(path,join('public','index.html'))
+  // res.sendFile(path,join('public','index.html'))
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 //routes
